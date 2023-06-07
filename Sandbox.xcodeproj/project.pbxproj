@@ -65,10 +65,8 @@
 			children = (
 				6C4E606B2A2DCC6300004B5E /* AppDelegate.swift */,
 				6C4E606D2A2DCC6300004B5E /* SceneDelegate.swift */,
-				6C4E606F2A2DCC6300004B5E /* ViewController.swift */,
-				6C4E60812A2DE79600004B5E /* HogeHostingController.swift */,
-				6C4E607D2A2DCCA000004B5E /* SwiftUIView.swift */,
-				6C4E607F2A2DE42600004B5E /* HogeModel.swift */,
+				6C9EB2912A2F2AD70006F4A8 /* SecondView */,
+				6C9EB2902A2F2AC90006F4A8 /* FirstView */,
 				6C4E60712A2DCC6300004B5E /* Main.storyboard */,
 				6C4E60742A2DCC6400004B5E /* Assets.xcassets */,
 				6C4E60762A2DCC6400004B5E /* LaunchScreen.storyboard */,
@@ -113,6 +111,24 @@
 				6C9B97FD2A2985BB00F9AB5C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6C9EB2902A2F2AC90006F4A8 /* FirstView */ = {
+			isa = PBXGroup;
+			children = (
+				6C4E606F2A2DCC6300004B5E /* ViewController.swift */,
+				6C4E60812A2DE79600004B5E /* HogeHostingController.swift */,
+				6C4E607D2A2DCCA000004B5E /* SwiftUIView.swift */,
+				6C4E607F2A2DE42600004B5E /* HogeModel.swift */,
+			);
+			path = FirstView;
+			sourceTree = "<group>";
+		};
+		6C9EB2912A2F2AD70006F4A8 /* SecondView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SecondView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

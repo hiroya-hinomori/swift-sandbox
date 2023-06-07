@@ -26,7 +26,7 @@ class ViewController: UIViewController {
             swiftUIView.view.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             swiftUIView.view.trailingAnchor.constraint(equalTo: view.trailingAnchor),
         ])
-        swiftUIView.tappedButtonPublisher
+        swiftUIView.tappedPublihser
             .sink { [weak self] in
                 let alert = UIAlertController(title: "Hello", message: nil, preferredStyle: .alert)
                 alert.addAction(.init(title: "OK", style: .default))

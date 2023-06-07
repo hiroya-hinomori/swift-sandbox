@@ -10,17 +10,17 @@ import SwiftUI
 import Combine
 
 class HogeHostingController: UIHostingController<SwiftUIView> {
-    private let tappedButtonSubject: PassthroughSubject<Void, Never> = .init()
-    
-    var tappedButtonPublisher: AnyPublisher<Void, Never> {
-        tappedButtonSubject.eraseToAnyPublisher()
+    private let model = HogeModel()
+
+    var tappedPublihser: AnyPublisher<Void, Never> {
+        model.$tappedSubject.eraseToAnyPublisher()
     }
     
     init(title: String) {
         super.init(
             rootView: .init(
                 text: title,
-                model: .init(tappedSubject: tappedButtonSubject)
+                model: model
             )
         )
     }

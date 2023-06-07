@@ -15,7 +15,7 @@ struct SwiftUIView: View {
         VStack(spacing: 20) {
             Text(text)
             Button("Say") {
-                model.tappedSubject.send()
+                model.tappedSubject = ()
             }
         }
     }
@@ -23,6 +23,6 @@ struct SwiftUIView: View {
 
 struct SwiftUIView_Previews: PreviewProvider {
     static var previews: some View {
-        SwiftUIView(text: "Hello", model: .init(tappedSubject: .init()))
+        SwiftUIView(text: "Hello", model: .init())
     }
 }
