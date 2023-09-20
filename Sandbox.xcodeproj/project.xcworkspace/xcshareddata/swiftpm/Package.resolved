@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "kmp-sandbox",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/hiroya-hinomori/kmp-sandbox.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "0cd37688d8d58b7d2ebb0d622cb4e99ecf18ed21"
+      }
+    }
+  ],
+  "version" : 2
+}

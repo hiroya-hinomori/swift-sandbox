@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import shared
 
 struct ContentView: View {
     @State private var isPresented = false
@@ -24,7 +25,7 @@ struct ContentView: View {
         }
         .padding()
         .alert(isPresented: $isPresented) {
-            Alert(title: Text("Alert"))
+            Alert(title: Text(Greeting().greet()))
         }
     }
 }

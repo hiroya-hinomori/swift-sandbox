@@ -20,6 +20,7 @@
 		6C9B97F82A2985BA00F9AB5C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9B97F72A2985BA00F9AB5C /* ContentView.swift */; };
 		6C9B97FA2A2985BB00F9AB5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C9B97F92A2985BB00F9AB5C /* Assets.xcassets */; };
 		6C9B97FE2A2985BB00F9AB5C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C9B97FD2A2985BB00F9AB5C /* Preview Assets.xcassets */; };
+		6CCD2B932ABA887B002C85A7 /* shared in Frameworks */ = {isa = PBXBuildFile; productRef = 6CCD2B922ABA887B002C85A7 /* shared */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CCD2B932ABA887B002C85A7 /* shared in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +83,7 @@
 				6C9B97F42A2985BA00F9AB5C /* Sandbox */,
 				6C4E606A2A2DCC6300004B5E /* Sandbox_UIKit */,
 				6C9B97F32A2985BA00F9AB5C /* Products */,
+				6CC6F4422AB977CA0016E162 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,6 +134,13 @@
 			path = SecondView;
 			sourceTree = "<group>";
 		};
+		6CC6F4422AB977CA0016E162 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -164,6 +174,9 @@
 			dependencies = (
 			);
 			name = Sandbox;
+			packageProductDependencies = (
+				6CCD2B922ABA887B002C85A7 /* shared */,
+			);
 			productName = Sandbox;
 			productReference = 6C9B97F22A2985BA00F9AB5C /* Sandbox.app */;
 			productType = "com.apple.product-type.application";
@@ -195,6 +208,9 @@
 				Base,
 			);
 			mainGroup = 6C9B97E92A2985BA00F9AB5C;
+			packageReferences = (
+				6CCD2B912ABA887B002C85A7 /* XCRemoteSwiftPackageReference "kmp-sandbox" */,
+			);
 			productRefGroup = 6C9B97F32A2985BA00F9AB5C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -543,6 +559,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6CCD2B912ABA887B002C85A7 /* XCRemoteSwiftPackageReference "kmp-sandbox" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hiroya-hinomori/kmp-sandbox.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6CCD2B922ABA887B002C85A7 /* shared */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6CCD2B912ABA887B002C85A7 /* XCRemoteSwiftPackageReference "kmp-sandbox" */;
+			productName = shared;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6C9B97EA2A2985BA00F9AB5C /* Project object */;
 }
